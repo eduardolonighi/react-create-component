@@ -66,7 +66,7 @@ export default class ComponentName extends Component {
   render() {
     return (
       <View style={styles.ComponentNameWrapper}>
-        <Text>\$COMPONENT_NAME</Text>
+        <Text>ComponentName</Text>
       </View>
     )
   }
