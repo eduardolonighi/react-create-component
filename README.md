@@ -3,6 +3,7 @@
 ## Usage:
 
 - Add scrpt to your path
+- Give it execute permissions
 - cd into directory where you want to create component
 - Run script
 - Select component type:  
