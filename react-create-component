@@ -34,7 +34,7 @@ done
 
 
 echo
-echo "====================="
+echo '========================================='
 echo "Component Name:"
 
 read COMPONENT_NAME
@@ -69,14 +69,14 @@ then
 cat <<EOF > $COMPONENT_DIR/$COMPONENT_NAME.js 
 import React, { Component } from 'react'
 import { View, Text } from 'react-native'
-// import T from 'prop-types'
+// import propTypes from 'prop-types'
 
 import styles from './${COMPONENT_NAME}.styles'
 
 export default class ${COMPONENT_NAME} extends Component {
   
   // static propTypes = {
-  //   blabla : T.string,
+  //   blabla : propTypes.string,
   // }
   
   // static defaultProps = {
@@ -106,14 +106,14 @@ cat <<EOF > $COMPONENT_DIR/$COMPONENT_NAME.js
 import React, { Component } from 'react'
 import { View, Text } from 'react-native'
 import { connect } from 'react-redux'
-// import T from 'prop-types'
+// import propTypes from 'prop-types'
 
 import styles from './${COMPONENT_NAME}.styles'
 
 class ${COMPONENT_NAME} extends Component {
   
   // static propTypes = {
-  //   blabla : T.string,
+  //   blabla : propTypes.string,
   // }
   
   // static defaultProps = {
@@ -149,7 +149,7 @@ then
 cat <<EOF > $COMPONENT_DIR/$COMPONENT_NAME.js 
 import React from 'react'
 import { View, Text } from 'react-native'
-// import T from 'prop-types'
+// import propTypes from 'prop-types'
 
 import styles from './$COMPONENT_NAME.styles'
 
@@ -162,7 +162,7 @@ const $COMPONENT_NAME = (props) => {
 }
 
 // $COMPONENT_NAME.propTypes = {
-//   blabla : T.string,
+//   blabla : propTypes.string,
 // }
 
 // $COMPONENT_NAME.defaultProps = {
@@ -179,7 +179,7 @@ cat <<EOF > $COMPONENT_DIR/$COMPONENT_NAME.js
 import React from 'react'
 import { View, Text } from 'react-native'
 import { connect } from 'react-redux'
-// import T from 'prop-types'
+// import propTypes from 'prop-types'
 
 import styles from './$COMPONENT_NAME.styles'
 
@@ -192,7 +192,7 @@ const $COMPONENT_NAME = (props) => {
 }
 
 // $COMPONENT_NAME.propTypes = {
-//   blabla : T.string,
+//   blabla : propTypes.string,
 // }
 
 // $COMPONENT_NAME.defaultProps = {
