@@ -1,6 +1,6 @@
-#Bash script for creating react components
+# Bash script for creating react components
 
-##Usage:
+## Usage:
 
 - Add scrpt to your path
 - cd into directory where you want to create component
@@ -73,7 +73,7 @@ export default class ComponentName extends Component {
 }
 ```
 
-###ComponentName.js (class with redux)
+### ComponentName.js (class with redux)
 
 ```javascript
 import React, { Component } from 'react'
@@ -114,7 +114,7 @@ const mapStateToProps = ({ state }) => {
 export default connect(mapStateToProps)(ComponentName)
 ```
 
-###ComponentName.js (stateless)
+### ComponentName.js (stateless)
 
 ```javascript
 import React from 'react'
@@ -142,7 +142,7 @@ const ComponentName = (props) => {
 export default ComponentName
 ```
 
-###ComponentName.js (stateless with redux)
+### ComponentName.js (stateless with redux)
 
 ```javascript
 import React from 'react'
